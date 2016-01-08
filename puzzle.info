@@ -1,0 +1,20 @@
+name = Puzzle Base Theme
+description = Simple theme form panel free editing
+core = 7.x
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;;
+
+regions[content]        = 'Content'
+
+plugins[panels][layouts] = templates/panels
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Stylesheets
+;;;;;;;;;;;;;;;;;;;;;
+
+stylesheets[all][] = css/layout.css
+stylesheets[all][] = css/base_style.css
+stylesheets[all][] = css/colors.css
+stylesheets[all][] = less/style.less

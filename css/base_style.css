@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:300,400,700&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow:300,400,700&subset=latin,cyrillic);
+/* line 5, ../sass/_colors.scss */
+.fullwidth_style_dark, .row-style-dark {
+  background: #002736;
+  color: #fff;
+}
+/* line 8, ../sass/_colors.scss */
+.fullwidth_style_dark a, .row-style-dark a {
+  color: #fff;
+}
+
+/* line 13, ../sass/_colors.scss */
+.fullwidth_style_black, .row-style-black {
+  background: #000;
+  color: #fff;
+}
+/* line 16, ../sass/_colors.scss */
+.fullwidth_style_black a, .row-style-black a {
+  color: #fff;
+}
+
+/* line 21, ../sass/_colors.scss */
+.fullwidth_style_light, .row-style-light {
+  background: #ccc;
+  color: #333;
+}
+/* line 24, ../sass/_colors.scss */
+.fullwidth_style_light a, .row-style-light a {
+  color: #333;
+}
+
+/* line 9, ../sass/base_style.scss */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+/* line 15, ../sass/base_style.scss */
+body * {
+  outline: 0;
+}
+
+/* line 19, ../sass/base_style.scss */
+ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+/* line 24, ../sass/base_style.scss */
+a {
+  color: #002736;
+  text-decoration: underline;
+}
+/* line 27, ../sass/base_style.scss */
+a:hover {
+  text-decoration: none;
+}
+/* line 30, ../sass/base_style.scss */
+a.invert {
+  color: #fff;
+  background: #002736;
+  display: inline-block;
+  padding: 3px 20px;
+  text-decoration: none;
+}
+/* line 36, ../sass/base_style.scss */
+a.invert:hover {
+  text-decoration: underline;
+}
+/* line 40, ../sass/base_style.scss */
+a.active {
+  color: #F4AA5F;
+}
+
+/* line 45, ../sass/base_style.scss */
+input[type="text"], input[type="email"], input[type="password"] {
+  height: 40px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+}
+/* line 49, ../sass/base_style.scss */
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+  border: 1px solid #ccc;
+  -webkit-box-shadow: 0 0 3px 3px #F4AA5F;
+  box-shadow: 0 0 3px 3px #F4AA5F;
+}
+
+/* line 56, ../sass/base_style.scss */
+img {
+  max-width: 100%;
+  height: auto;
+}

@@ -1,0 +1,27 @@
+$dark    : #002736;
+$light   : #ccc;
+$accent  : #F4AA5F;
+
+.fullwidth_style_dark, .row-style-dark {
+  background: $dark;
+  color: #fff;
+  a {
+    color: #fff;
+  }
+}
+
+.fullwidth_style_black, .row-style-black {
+  background: #000;
+  color: #fff;
+  a {
+    color: #fff;
+  }
+}
+
+.fullwidth_style_light, .row-style-light {
+  background: $light;
+  color: #333;
+  a {
+    color: #333;
+  }
+}

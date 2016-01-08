@@ -1,0 +1,87 @@
+$screen-sm-min : 700px;
+
+$screen-md-min : 900px;
+
+$screen-lg-min : 1400px;
+
+$grid-columns  : 12;
+
+$grid-gutter-width : 20px;
+
+$container-sm      : 100%;
+
+$container-md      : 90%;
+
+$container-lg      : 90%;
+
+@import '_grid';
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+.container {
+  @media (min-width: $screen-sm-min) {
+    width: $container-sm;
+  }
+  @media (min-width: $screen-md-min) {
+    width: $container-md;
+  }
+  @media (min-width: $screen-lg-min) {
+    width: $container-lg;
+  }
+  margin: 0 auto;
+}
+
+/**
+ * Markup free clearing.
+ *
+ * @see http://perishablepress.com/press/2009/12/06/new-clearfix-hack
+ */
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/* IE6 */
+* html .clearfix {
+  height: 1%;
+}
+/* IE7 */
+*:first-child + html .clearfix {
+  min-height: 1%;
+}
+
+.element-invisible {
+  display: none;
+}
+
+.row {
+  @extend .clearfix;
+}
+
+@media (max-width: $screen-sm-min) {
+  .callback-form-left-column, .callback-form-right-column {
+    float: none!important;
+    width: 100%!important;
+    text-align: center!important;
+  }
+  .callback-form-right-column input[type="text"] {
+    width: 100%;
+  }
+  .paragraph-image-position-left .field-name-field-paragraph-image, .paragraph-image-position-right .field-name-field-paragraph-image {
+    float: none!important;
+    margin-right: 0!important;
+  }
+  .paragraph-image-position-left .field-name-field-paragraph-image img, .paragraph-image-position-right .field-name-field-paragraph-image img {
+    width: 100%;
+    height: auto;
+  }
+}
