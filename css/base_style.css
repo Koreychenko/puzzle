@@ -1,6 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic&subset=latin,cyrillic);
-@import url(https://fonts.googleapis.com/css?family=PT+Sans:300,400,700&subset=latin,cyrillic);
-@import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow:300,400,700&subset=latin,cyrillic);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic);
 /* line 5, ../sass/_colors.scss */
 .fullwidth_style_dark, .row-style-dark {
   background: #002736;
@@ -51,45 +51,79 @@ ul {
 
 /* line 24, ../sass/base_style.scss */
 a {
-  color: #002736;
   text-decoration: underline;
 }
-/* line 27, ../sass/base_style.scss */
+/* line 26, ../sass/base_style.scss */
 a:hover {
   text-decoration: none;
 }
-/* line 30, ../sass/base_style.scss */
-a.invert {
-  color: #fff;
-  background: #002736;
-  display: inline-block;
-  padding: 3px 20px;
-  text-decoration: none;
-}
-/* line 36, ../sass/base_style.scss */
-a.invert:hover {
-  text-decoration: underline;
-}
-/* line 40, ../sass/base_style.scss */
-a.active {
-  color: #F4AA5F;
-}
 
-/* line 45, ../sass/base_style.scss */
+/* line 31, ../sass/base_style.scss */
 input[type="text"], input[type="email"], input[type="password"] {
   height: 40px;
   padding: 0 10px;
   border: 1px solid #ccc;
 }
-/* line 49, ../sass/base_style.scss */
+/* line 35, ../sass/base_style.scss */
 input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
   border: 1px solid #ccc;
   -webkit-box-shadow: 0 0 3px 3px #F4AA5F;
   box-shadow: 0 0 3px 3px #F4AA5F;
 }
 
-/* line 56, ../sass/base_style.scss */
+/* line 42, ../sass/base_style.scss */
 img {
   max-width: 100%;
   height: auto;
+}
+
+/* line 47, ../sass/base_style.scss */
+.main-menu {
+  margin-top: 15px;
+  padding: 5px 15px;
+}
+/* line 50, ../sass/base_style.scss */
+.main-menu .menu {
+  padding-left: 0;
+}
+/* line 52, ../sass/base_style.scss */
+.main-menu .menu li {
+  display: inline-block;
+  margin-right: 20px;
+}
+/* line 55, ../sass/base_style.scss */
+.main-menu .menu li:last-child {
+  margin-right: 0;
+}
+/* line 58, ../sass/base_style.scss */
+.main-menu .menu li a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* line 66, ../sass/base_style.scss */
+.site-wrapper > .container {
+  -webkit-box-shadow: 0 1px 3px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* line 71, ../sass/base_style.scss */
+.pane-with-paddings {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+/* line 77, ../sass/base_style.scss */
+p:first-child {
+  margin-top: 0;
+}
+
+/* line 82, ../sass/base_style.scss */
+.header-date {
+  font-size: 14px;
+  color: #fff;
+  padding: 3px 8px;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
 }

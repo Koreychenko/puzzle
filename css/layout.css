@@ -266,7 +266,7 @@
   margin-left: 100%;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 768px) {
   /* line 21, ../sass/_grid.scss */
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left;
@@ -527,7 +527,7 @@
     margin-left: 100%;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 1024px) {
   /* line 21, ../sass/_grid.scss */
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
@@ -1064,22 +1064,22 @@ body * {
 .container {
   margin: 0 auto;
 }
-@media (min-width: 700px) {
+@media (min-width: 768px) {
   /* line 28, ../sass/layout.scss */
   .container {
-    width: 100%;
+    width: 95%;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 1024px) {
   /* line 28, ../sass/layout.scss */
   .container {
-    width: 90%;
+    width: 960px;
   }
 }
 @media (min-width: 1400px) {
   /* line 28, ../sass/layout.scss */
   .container {
-    width: 90%;
+    width: 1200px;
   }
 }
 
@@ -1114,26 +1114,32 @@ body * {
   display: none;
 }
 
-@media (max-width: 700px) {
-  /* line 71, ../sass/layout.scss */
+/* line 66, ../sass/layout.scss */
+.row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+@media (max-width: 768px) {
+  /* line 74, ../sass/layout.scss */
   .callback-form-left-column, .callback-form-right-column {
     float: none !important;
     width: 100% !important;
     text-align: center !important;
   }
 
-  /* line 76, ../sass/layout.scss */
+  /* line 79, ../sass/layout.scss */
   .callback-form-right-column input[type="text"] {
     width: 100%;
   }
 
-  /* line 79, ../sass/layout.scss */
+  /* line 82, ../sass/layout.scss */
   .paragraph-image-position-left .field-name-field-paragraph-image, .paragraph-image-position-right .field-name-field-paragraph-image {
     float: none !important;
     margin-right: 0 !important;
   }
 
-  /* line 83, ../sass/layout.scss */
+  /* line 86, ../sass/layout.scss */
   .paragraph-image-position-left .field-name-field-paragraph-image img, .paragraph-image-position-right .field-name-field-paragraph-image img {
     width: 100%;
     height: auto;

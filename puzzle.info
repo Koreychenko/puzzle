@@ -18,3 +18,14 @@ stylesheets[all][] = css/layout.css
 stylesheets[all][] = css/base_style.css
 stylesheets[all][] = css/colors.css
 stylesheets[all][] = less/style.less
+
+settings[puzzle_font_color] = '#333333'
+settings[puzzle_header_color] = '#0D6986'
+settings[puzzle_main_color] = '#8EC7D2'
+settings[puzzle_link_color] = '#DB073D'
+settings[puzzle_site_back_color] = '#EDE5F4'
+settings[puzzle_site_content_color] = '#ffffff'
+settings[puzzle_site_footer_color] = '#07485B'
+settings[puzzle_site_footer_text_color] = '#ffffff'
+settings[puzzle_menu_link_color] = '#ffffff'
+
