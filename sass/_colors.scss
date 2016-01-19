@@ -1,27 +1,184 @@
-$dark    : #002736;
-$light   : #ccc;
-$accent  : #F4AA5F;
+$corporate : #22ABA6;
+$cyan : #5bbfc5;
+$medical : #18E2BA;
+$restaurant : #FF0000;
+$portfolio : #fba628;
+$orange : #ff8833;
+$tangerine : #e2492f;
+$gold : #c79c60;
 
-.fullwidth_style_dark, .row-style-dark {
-  background: $dark;
-  color: #fff;
+.corporate {
+  .site-wrapper {
+      border-top: 2px solid $corporate;
+  }
+  input[type="submit"] {
+    background: $corporate;
+  }
+  input[type="text"], input[type="email"], input[type="password"], textarea {
+    &:focus {
+      border-color: $corporate;
+    }
+  }
   a {
-    color: #fff;
+    color: $corporate;
+  }
+  .main-menu {
+    .menu {
+      li {
+        a {
+          &:hover, &.active {
+            color: $corporate;
+          }
+        }
+      }
+    }
+  }
+  .main-background {
+    background-color: $corporate;
+  }
+  .main-color {
+    color: $corporate;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    a {
+      color: #555;
+      &:hover {
+        color: $corporate;
+      }
+    }
+  }
+  .item-list {
+    .pager {
+      .pager-current {
+        background-color: $corporate;
+      }
+    }
+  }
+  .phones-block, .address-block {
+    i {
+      background-color: $corporate;
+    }
+  }
+  .ui-widget {
+    .ui-widget-header {
+      .ui-state-default {
+        &.ui-tabs-active {
+          a {
+            background-color: $corporate;
+          }
+        }
+      }
+    }
+    &.ui-accordion {
+      .ui-accordion-header:not(.ui-state-active) {
+        background: $corporate!important;
+      }
+    }
   }
 }
 
-.fullwidth_style_black, .row-style-black {
-  background: #000;
-  color: #fff;
-  a {
-    color: #fff;
+.cyan {
+  .site-wrapper {
+    .container {
+      border-top: 2px solid $cyan;
+    }
+  }
+  input[type="submit"] {
+    background: $cyan;
+  }
+  input[type="text"], input[type="email"], input[type="password"], textarea {
+    &:focus {
+      border-color: $cyan;
+    }
   }
 }
-
-.fullwidth_style_light, .row-style-light {
-  background: $light;
-  color: #333;
-  a {
-    color: #333;
+.medical {
+  .site-wrapper {
+    .container {
+      border-top: 2px solid $medical;
+    }
+  }
+  input[type="submit"] {
+    background: $medical;
+  }
+  input[type="text"], input[type="email"], input[type="password"], textarea {
+    &:focus {
+      border-color: $medical;
+    }
+  }
+}
+.restaurant {
+  .site-wrapper {
+    .container {
+      border-top: 2px solid $restaurant;
+    }
+  }
+  input[type="submit"] {
+    background: $restaurant;
+  }
+  input[type="text"], input[type="email"], input[type="password"], textarea {
+    &:focus {
+      border-color: $restaurant;
+    }
+  }
+}
+.portfolio {
+  .site-wrapper {
+    .container {
+      border-top: 2px solid $portfolio;
+    }
+  }
+  input[type="submit"] {
+    background: $portfolio;
+  }
+  input[type="text"], input[type="email"], input[type="password"], textarea {
+    &:focus {
+      border-color: $portfolio;
+    }
+  }
+}
+.orange {
+  .site-wrapper {
+    .container {
+      border-top: 2px solid $orange;
+    }
+  }
+  input[type="submit"] {
+    background: $orange;
+  }
+  input[type="text"], input[type="email"], input[type="password"], textarea {
+    &:focus {
+      border-color: $orange;
+    }
+  }
+}
+.tangerine {
+  .site-wrapper {
+    .container {
+      border-top: 2px solid $tangerine;
+    }
+  }
+  input[type="submit"] {
+    background: $tangerine;
+  }
+  input[type="text"], input[type="email"], input[type="password"], textarea {
+    &:focus {
+      border-color: $tangerine;
+    }
+  }
+}
+.gold {
+  .site-wrapper {
+    .container {
+      border-top: 2px solid $gold;
+    }
+  }
+  input[type="submit"] {
+    background: $gold;
+  }
+  input[type="text"], input[type="email"], input[type="password"], textarea {
+    &:focus {
+      border-color: $gold;
+    }
   }
 }
