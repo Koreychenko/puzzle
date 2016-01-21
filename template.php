@@ -35,3 +35,20 @@ function puzzle_preprocess_html(&$vars) {
   $vars['classes_array'][] = theme_get_setting('background_color');
 
 }
+
+
+function puzzle_settings_form_submit(&$form, &$form_state) {
+  $image_fid = $form_state['values']['background_image'];
+  $image = file_load($image_fid);
+  if (is_object($image)) {
+    // Check to make sure that the file is set to be permanent.
+    if ($image->status == 0) {
+      // Update the status.
+      $image->status = FILE_STATUS_PERMANENT;
+      // Save the update.
+      file_save($image);
+      // Add a reference to prevent warnings.
+      file_usage_add($image, 'puzzle', 'theme', 1);
+     }
+  }
+}

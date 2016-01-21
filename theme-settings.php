@@ -33,8 +33,24 @@ function puzzle_form_system_theme_settings_alter(&$form, $form_state) {
     '#options' => background_color(),
   );
 
+  $form['background_image'] = array(
+    '#type'          => 'managed_file',
+    '#title'         => t('Background Image'),
+    '#default_value' => theme_get_setting('background_image'),
+     '#upload_location' => file_default_scheme() . '://theme_background',
+     '#upload_validators' => array(
+      'file_validate_extensions' => array('gif png jpg jpeg'),
+      ),
+  );
+
+  $form['header_top_padding'] = array(
+    '#type'          => 'textfield',
+    '#title'         => t('HEader Top Padding'),
+    '#default_value' => theme_get_setting('header_top_padding'),
+  );
 
 }
+
 
 function background_color() {
   $options = array();

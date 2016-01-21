@@ -75,6 +75,9 @@ $gold : #c79c60;
       }
     }
   }
+  .slick .slick-dots li.slick-active button {
+    background: $corporate;
+  }
 }
 
 .cyan {

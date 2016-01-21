@@ -40,9 +40,7 @@
     </div>
   <?php endif; ?>
     <div class="content <?php if ($content['page_title']) {print 'with-title'; } ?>">
-      <div class="container">
         <?php print $content['main_content']; ?>
-      </div>
     </div>
   </div>
   <div class="footerpusher">
